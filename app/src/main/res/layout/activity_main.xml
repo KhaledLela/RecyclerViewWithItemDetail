@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <eu.davidea.flipview.FlipView
+        android:id="@+id/flip_layout"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:animateDesignLayoutOnly="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--You use ListView-->
+        <!--<ListView-->
+        <!--android:id="@+id/list_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+        <fragment
+            android:id="@+id/fragment_item_detail"
+            android:name="com.lelasoft.recyclerviewwithitemdetail.ItemDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </eu.davidea.flipview.FlipView>
+
+
+</android.support.constraint.ConstraintLayout>
