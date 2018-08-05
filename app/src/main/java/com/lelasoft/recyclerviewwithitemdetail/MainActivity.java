@@ -23,10 +23,12 @@ public class MainActivity extends AppCompatActivity implements MyItemAdapter.MyC
         flipView = findViewById(R.id.flip_layout);
 
         List<String> dataSet = new ArrayList<>();
-        dataSet.add("Item 1");
-        dataSet.add("Item 2");
-        dataSet.add("Item 3");
-        dataSet.add("Item 4");
+        dataSet.add("User 1");
+        dataSet.add("User 2");
+        dataSet.add("User 3");
+        dataSet.add("User 4");
+        dataSet.add("User 5");
+
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new MyItemAdapter(this,dataSet));
